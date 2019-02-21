@@ -15,13 +15,13 @@ docker network create -d macvlan -o parent=eth0 my-macvlan-net
 PPPoE login information on "pap-secrets" and "dsl-provider" which you should modify first to meet your own environment. You can modify it first before building up the image or modify both files after container startup. Below will show which place it should be replaced on "pap-secrets" and "dsl-provider".
 
 ###### dsl-provider
-*/etc/ppp/peers/dsl-provider*
+*/etc/ppp/peers/dsl-provider* . 
 replace "test" to the PPPoE login username
 ```
 user "test"
 ```
 ###### pap-secrets
-*/etc/ppp/pap-secrets*
+*/etc/ppp/pap-secrets* . 
 replace "test" and "pass" to the PPPoE login username and password
 ```
 "test" * "pass"
