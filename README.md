@@ -12,7 +12,7 @@ modprobe pppoe
 docker network create -d macvlan -o parent=eth0 my-macvlan-net
 ```
 ## How To Use
-PPPoE login information on **pap-secrets** and **dsl-provider** which you should modify first to meet your own environment. You can modify it first before build up the image or modify both file after container startup. Below will should which place it should be replaced on Dockerfile and dsl-provider.
+PPPoE login information on "pap-secrets" and "dsl-provider" which you should modify first to meet your own environment. You can modify it first before building up the image or modify both files after container startup. Below will show which place it should be replaced on "pap-secrets" and "dsl-provider".
 
 ###### Dockerfile
 replace "test" to the PPPoE login username
